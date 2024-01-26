@@ -10,6 +10,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { IonicModule } from '@ionic/angular';
+import { HeroComponent } from './home/hero/hero.component';
+import { ClientComponent } from './home/client/client.component';
+import { AboutComponent } from './home/about/about.component';
+import { SkillsComponent } from './home/skills/skills.component';
+import { CtaComponent } from './home/cta/cta.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { IonicModule } from '@ionic/angular';
     ServiceComponent,
     PortfolioComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HeroComponent,
+    ClientComponent,
+    AboutComponent,
+    SkillsComponent,
+    CtaComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

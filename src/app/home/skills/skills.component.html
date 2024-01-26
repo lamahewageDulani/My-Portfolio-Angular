@@ -1,0 +1,28 @@
+<section class="section skill" aria-labelledby="skill-label">
+  <div class="container">
+    <div class="skill-content">
+      <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
+      <ul class="skill-list">
+        <li *ngFor="let skill of skillsArray">
+          <div class="card card-sm" [style]="skill.bgcolor">
+            <div class="card-media">
+              <ion-icon [name]="skill.logo"></ion-icon>
+            </div>
+            <h2 class="card-title">{{ skill.label }}</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <figure class="skill-banner">
+      <img
+        src="assets/images/skill-banner.png"
+        width="581"
+        height="657"
+        loading="lazy"
+        alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face"
+        class="w-100"
+      />
+    </figure>
+  </div>
+</section>
