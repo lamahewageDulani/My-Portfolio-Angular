@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  socialLogos: string[] = [
+    "logo-facebook",
+    "logo-twitter",
+    "logo-instagram",
+    "logo-linkedin",
+    "logo-pinterest"
+  ];
+
 }

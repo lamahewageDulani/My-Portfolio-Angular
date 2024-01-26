@@ -1,1 +1,17 @@
-<p>footer works!</p>
+<footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li *ngFor="let logo of socialLogos">
+          <a href="#" class="social-link">
+            <ion-icon [name]="logo"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2023 copyright all right reserved</p>
+
+    </div>
+</footer>
