@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  status = false;
+  addToggle()
+  {
+    this.status = !this.status;       
+  }
 
+  navbarArray: {name: string, link: string}[] = [
+    {name: 'Home', link: '/home'},
+    {name: 'Service', link: '/service'},
+    {name: 'Portfolio', link: '/portfolio'},
+    {name: 'Contact', link: '/contact'}
+  ];
 }
