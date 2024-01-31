@@ -15,7 +15,7 @@ export class HeaderComponent {
   navbarArray: {name: string, link: string}[] = [
     {name: 'Home', link: '/home'},
     {name: 'Service', link: '/service'},
-    {name: 'Portfolio', link: '/portfolio'},
+    {name: 'Projects', link: '/portfolio'},
     {name: 'Contact', link: '/contact'}
   ];
 }

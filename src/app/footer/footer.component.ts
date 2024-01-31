@@ -7,12 +7,20 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  linkedinLink: string="https://www.linkedin.com/in/dulani-lamahewage/";
+  githubLink: string="https://github.com/lamahewageDulani";
+  facebookLink: string="";
+
+  socialLinks: {name: string, link: string}[] = [
+    {name: 'logo-linkedin', link: this.linkedinLink},
+    {name: 'logo-github', link: this.githubLink},
+    {name: 'logo-facebook', link: this.facebookLink}
+  ]
+
   socialLogos: string[] = [
-    "logo-facebook",
-    "logo-twitter",
-    "logo-instagram",
     "logo-linkedin",
-    "logo-pinterest"
+    "logo-github",
+    "logo-facebook"
   ];
 
 }

@@ -4,12 +4,13 @@
       <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
       <ul class="skill-list">
         <li *ngFor="let skill of skillsArray">
-          <div class="card card-sm" [style]="skill.bgcolor">
+          <ion-card><div class="card card-sm" [style]="skill.bgcolor">
             <div class="card-media">
               <ion-icon [name]="skill.logo"></ion-icon>
             </div>
-            <h2 class="card-title">{{ skill.label }}</h2>
-          </div>
+              <h2 class="card-title">{{ skill.label }}</h2>
+            </div>
+          </ion-card>
         </li>
       </ul>
     </div>

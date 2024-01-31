@@ -23,7 +23,7 @@
 }
 
 .card,
-.card-media { border: 2px solid var(--jet); }
+/* .card-media { border: 2px solid var(--jet); } */
 
 .card-lg { padding: 25px; }
 
