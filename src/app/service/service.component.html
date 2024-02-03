@@ -1,10 +1,6 @@
 <main>
     <article>
 
-      <!-- 
-        - #SERVICE
-      -->
-
       <section class="section service has-bg-image" aria-labelledby="service-label"
         style="background-image: url('assets/images/service-bg.png')">
         <div class="container">
@@ -13,43 +9,25 @@
 
           <ul class="service-list">
 
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(177, 39%, 72%)">
+            <li *ngFor="let item of servicesArray" class="card-container">
+              <div class="card card-md" [style]="item.color">
 
                 <div class="card-media">
-                  <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+                  <ion-icon [name]="item.icon" aria-hidden="true"></ion-icon>
                 </div>
 
                 <div>
-                  <h3 class="card-title title-sm">UI/UX Design</h3>
+                  <h3 class="card-title title-sm">{{ item.title }}</h3>
 
                   <p class="body-sm">
-                    I am designing the user interface and user experience for the web and mobile applications. I am using Figma for designing the UI/UX.
+                    {{ item.description }}
                   </p>
                 </div>
 
               </div>
             </li>
 
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(41, 99%, 64%)">
-
-                <div class="card-media">
-                  <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="card-title title-sm">Development</h3>
-
-                  <p class="body-sm">
-                    I give my best to develop the web applications using the latest technologies like ReactJS, Angular and Spring Boot.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="card-container">
+            <!-- <li class="card-container">
               <div class="card card-md" style="background-color: hsl(19, 97%, 85%)">
 
                 <div class="card-media">
@@ -123,7 +101,7 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
