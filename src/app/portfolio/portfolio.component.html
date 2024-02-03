@@ -1,10 +1,6 @@
 <main>
     <article>
 
-      <!-- 
-        - #PORTFOLIO
-      -->
-
       <section class="section portfolio" aria-labelledby="portfolio-label">
         <div class="container">
 
@@ -12,11 +8,11 @@
 
           <ul class="portfolio-list">
 
-            <li>
+            <li *ngFor="let item of projectsArray">
               <div class="portfolio-card">
 
                 <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-1.jpg" width="800" height="540" loading="lazy"
+                  <img [src]="item.image" width="800" height="540" loading="lazy"
                     alt="Website Design for Marketing Agency Startup" class="img-cover">
 
                   <a href="#" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
@@ -26,105 +22,15 @@
 
                 <div class="card-content">
 
-                  <span class="chip label-md">Web Design</span>
+                  <span class="chip label-md">{{ item.name }}</span>
 
-                  <h3 class="title-md">Employee Management System.</h3>
-
-                  <p class="card-text">
-                    With the collaboration of five members team, we developed this system for the second year project of the university. This system is developed using ReactJS, Spring Boot and MySQL.
-                  </p>
-
-                  <a href="#" class="btn btn-primary">Github Link</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-2.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
-
-                  <a href="#" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="chip label-md">Web Design</span>
-
-                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
+                  <h3 class="title-md">{{ item.topic }}</h3>
 
                   <p class="card-text">
-                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
-                    websites, web services and online stores
+                    {{ item.description }}
                   </p>
 
-                  <a href="#" class="btn btn-primary">View Project</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-3.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
-
-                  <a href="#" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="chip label-md">Web Design</span>
-
-                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
-
-                  <p class="card-text">
-                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
-                    websites, web services and online stores
-                  </p>
-
-                  <a href="#" class="btn btn-primary">View Project</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-4.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
-
-                  <a href="#" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="chip label-md">Web Design</span>
-
-                  <h3 class="title-md">Website Design for Marketing Agency Startup</h3>
-
-                  <p class="card-text">
-                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
-                    websites, web services and online stores
-                  </p>
-
-                  <a href="#" class="btn btn-primary">View Project</a>
+                  <a [href]="item.link" class="btn btn-primary">{{ item.btnname }}</a>
 
                 </div>
 
