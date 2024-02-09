@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
-
+  heroDetailsArray: {title: string, description: string}[] = [
+    {
+      title: "Age",
+      description: "25 years"
+    },
+    {
+      title: "Experience",
+      description: "Have worked on my own projects."
+    }
+  ]
 }

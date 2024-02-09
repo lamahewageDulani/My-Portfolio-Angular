@@ -209,6 +209,12 @@ body.loaded { overflow: visible; }
 
 .label-md { font-size: var(--fs-12); }
 
+.content-body {
+  display: flex;
+  align-items: start;
+}
+
+
 /**
  * font weight
  */

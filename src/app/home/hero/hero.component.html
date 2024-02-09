@@ -10,6 +10,15 @@
         <p class="hero-text body-md">
           Software Engineer Intern, MillenniumIT ESP.
         </p>
+        
+        <div *ngFor="let item of heroDetailsArray" class=" content-body">
+          <div>
+            <p class="body-sm">{{ item.title }}</p>
+          </div>
+          <div>
+            <p class="body-sm"> : {{ item.description }}</p>
+          </div>
+        </div>
 
         <a href="#" class="btn btn-primary">Let's Start</a>
 
