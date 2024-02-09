@@ -214,6 +214,13 @@ body.loaded { overflow: visible; }
   align-items: start;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* This creates two equal-width columns */
+}
+
+
+
 
 /**
  * font weight
