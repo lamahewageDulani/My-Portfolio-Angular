@@ -209,11 +209,8 @@ body.loaded { overflow: visible; }
 
 .label-md { font-size: var(--fs-12); }
 
-.content-body {
-  display: flex;
-  align-items: start;
-}
 
+/* myCSS */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr; /* This creates two equal-width columns */
