@@ -14,6 +14,14 @@ export class HeroComponent {
     {
       title: "Experience",
       description: "Have worked on my own projects."
+    },
+    {
+      title: "Country",
+      description: "Sri Lanka"
+    },
+    {
+      title: "E-mail",
+      description: "dulaniruwanthika99@gmail.com"
     }
   ]
 }
